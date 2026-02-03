@@ -1,6 +1,6 @@
 {
   "name": "resend-ai-sdk",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Resend email tools for the AI SDK",
   "keywords": [
     "ai",
