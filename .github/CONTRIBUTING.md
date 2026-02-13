@@ -1,4 +1,4 @@
-# Contributing to Resend - AI SDK Tools
+# Contributing to Webflow - AI SDK Tools
 
 Thank you for your interest in contributing! We welcome contributions of all kinds, whether it's reporting bugs, suggesting features, improving documentation, or adding new tools.
 
@@ -36,8 +36,8 @@ There are many ways to contribute:
 2. Clone your fork locally:
 
    ```bash
-   git clone https://github.com/your-username/resend-ai-sdk.git
-   cd resend-ai-sdk
+   git clone https://github.com/your-username/webflow-ai-sdk.git
+   cd webflow-ai-sdk
    ```
 
 3. Install dependencies:
@@ -83,7 +83,7 @@ There are many ways to contribute:
 
 ### PR Guidelines
 
-1. **Clear conventional title**: Describe what changed (e.g., `feat: add createContact tool`)
+1. **Clear conventional title**: Describe what changed (e.g., `feat: add listForms tool`)
 2. **Description**: Explain what and why
 3. **Link issues**: Reference any related issues (e.g., "Fixes #123")
 
@@ -99,8 +99,8 @@ This project uses [release-please](https://github.com/googleapis/release-please)
 
 **Examples:**
 
-- `feat: add createContact tool`
-- `fix: handle missing email subject`
+- `feat: add listForms tool`
+- `fix: handle missing site ID`
 - `chore: update dependencies`
 
 Only `feat:` and `fix:` commits will appear in the changelog and trigger a new release. All other commit types are allowed but will not trigger a release.

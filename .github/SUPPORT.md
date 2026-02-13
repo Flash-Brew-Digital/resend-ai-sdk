@@ -1,6 +1,6 @@
 # Support
 
-Thank you for using these Resend email tools for the AI SDK! If you need help, please review the following options:
+Thank you for using these Webflow tools for the AI SDK! If you need help, please review the following options:
 
 ## 📚 Documentation
 

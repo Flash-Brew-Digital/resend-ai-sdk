@@ -4,7 +4,7 @@ Guidelines for AI coding agents working in this repository.
 
 ## Project Overview
 
-TypeScript library providing [AI SDK](https://ai-sdk.dev) tools for [Resend](https://resend.com) email sending. Exports: `sendEmail`, `sendBatchEmails`, `getEmail`, `listEmails`, `listTemplates`, `getTemplate`, `createContact`, `listContacts`, `removeContact`.
+TypeScript library providing [AI SDK](https://ai-sdk.dev) tools for [Webflow](https://webflow.com) site management. Exports: `listSites`, `publishSite`, `listPages`, `listForms`, `listFormSubmissions`, `listCustomCode`, `addCustomCode`.
 
 ## Commands
 
@@ -16,7 +16,7 @@ pnpm build            # Build (tsup -> dist/)
 pnpm type-check       # TypeScript checking (tsc --noEmit)
 pnpm check            # Lint/format check (Ultracite/Biome)
 pnpm fix              # Auto-fix lint/format issues
-pnpm test             # Run tests (requires RESEND_API_KEY in .env)
+pnpm test             # Run tests (requires WEBFLOW_API_KEY in .env)
 ```
 
 **CI pipeline**: `pnpm type-check && pnpm check && pnpm build && pnpm test`
@@ -38,7 +38,6 @@ pnpm test             # Run tests (requires RESEND_API_KEY in .env)
 Organized automatically by Biome. Use `import type` for type-only imports:
 
 ```typescript
-import { Resend } from "resend";
 import { tool } from "ai";
 import { z } from "zod";
 import type { SomeType } from "some-package";
@@ -134,15 +133,14 @@ Use [Conventional Commits](https://www.conventionalcommits.org/):
 - `fix:` - Bug fixes (triggers release)
 - `chore:`, `docs:`, `refactor:` - Other changes (no release)
 
-Examples: `feat: add createContact tool`, `fix: handle missing email subject`
+Examples: `feat: add listForms tool`, `fix: handle missing site ID`
 
 ## Dependencies
 
-- `resend` - Resend SDK
 - `ai` - Vercel AI SDK (peer)
 - `zod` - Schema validation (peer)
 
 ## Environment
 
-- `RESEND_API_KEY` - Required for Resend API operations
-- `RESEND_EMAIL_DOMAIN` - Your verified domain for sending emails
+- `WEBFLOW_API_KEY` - Required for Webflow API operations
+- `WEBFLOW_SITE_ID` - Default site ID (optional, avoids passing siteId to every tool)

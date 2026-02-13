@@ -1,17 +1,17 @@
 {
-  "name": "resend-ai-sdk",
-  "version": "1.0.0",
-  "description": "Resend email tools for the AI SDK",
+  "name": "@224industries/webflow-ai-sdk",
+  "version": "0.0.0",
+  "description": "Webflow tools for the AI SDK",
   "keywords": [
     "ai",
     "ai-sdk",
-    "resend",
-    "email",
+    "webflow",
+    "cms",
     "tools"
   ],
-  "homepage": "https://github.com/Flash-Brew-Digital/resend-ai-sdk",
+  "homepage": "https://github.com/224-Industries/webflow-ai-sdk",
   "bugs": {
-    "url": "https://github.com/Flash-Brew-Digital/resend-ai-sdk/issues"
+    "url": "https://github.com/224-Industries/webflow-ai-sdk/issues"
   },
   "license": "MIT",
   "author": {
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Flash-Brew-Digital/resend-ai-sdk.git"
+    "url": "git+https://github.com/224-Industries/webflow-ai-sdk.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -45,16 +45,13 @@
     "bump-deps": "npx npm-check-updates -u -p pnpm && pnpm install",
     "type-check": "tsc --noEmit"
   },
-  "dependencies": {
-    "resend": "^6.9.1"
-  },
   "devDependencies": {
-    "@biomejs/biome": "2.3.13",
-    "@types/node": "^25.2.0",
+    "@biomejs/biome": "2.3.15",
+    "@types/node": "^25.2.3",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "ultracite": "7.1.3",
+    "ultracite": "7.1.5",
     "vitest": "^4.0.18"
   },
   "peerDependencies": {
@@ -64,5 +61,5 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.29.3"
 }
